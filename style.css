@@ -1,0 +1,400 @@
+/* Estilo geral */
+body {/* Estilo para seções *//* Estilo Global */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background: #f4f4f4; /* Fundo cinza claro */
+        color: #edf3f3; /* Texto cinza escuro */
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    
+    main {
+        padding: 50px;
+        max-width: 1200px;
+        margin: 30px auto;
+        background: white; /* Fundo branco */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        border-radius: 10px; /* Bordas redondas */
+    }
+    
+    /* Cabeçalho */
+    header {
+        text-align: center;
+        background: linear-gradient(to right, #f3f3f5, hwb(224 6% 66%)); /* Gradiente verde */
+        color: white;
+        padding: 30px 10px;
+        border: bottom 2cap;px solid #100c50;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    
+    header p {
+        font-size: 1.2rem;
+    }
+    
+    /* Botões */
+    .btn {
+        display: inline-block;
+        margin: 20px;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        background: #01081f; /* Verde */
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+        background: #064fee; /* Verde mais escuro */
+        transform: scale(1.05);
+    }
+    
+    /* Seções de Produtos e Outros */
+    .produto {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .produto img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .produto h2 {
+        font-size: 1.5rem;
+        color: #333;
+    }
+    
+    .produto p {
+        font-size: 1rem;
+        color: #666;
+    }
+    
+    /* Formulário */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px auto;
+        max-width: 500px;
+    }
+    
+    form label {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    form input,
+    form textarea {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+    }
+    
+    form textarea {
+        height: 100px;
+        resize: none;
+    }
+    
+    form button {
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background: #0557ee;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    
+    form button:hover {
+        background: #0663f0;
+    }
+    
+    /* Imagens grandes (páginas como "Sobre Nós") */
+    .imagem-grande {
+        width: 20%;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Listas (Usado em Missão/Visão/Valores) */
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 20px 0;
+    }
+    
+    ul li {
+        margin-bottom: 10px;
+        color: #444;
+        font-size: 1rem;
+    }
+    
+    /* Rodapé (opcional) */
+    footer {
+        background: #eff0f307;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 150%;
+        font-size: 0.9rem;
+    }
+    
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 10px;
+    max-width: 768px;
+    margin: 20px auto;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.imagem-grande {
+    width: 05%;
+    border-radius: 10px;
+}
+
+/* Estilo para listas */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url(fundonovo.webp) no-repeat center center fixed; /* Fundo com imagem */
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container flexível para organizar os elementos */
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Espaça os itens igualmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Quebra para próxima linha em telas menores */
+}
+
+/* Estilo da logo */
+.logo-img {
+    width: 120px; /* Ajusta tamanho da logo */
+    height: auto;
+    margin-right: 20px; /* Espaço entre logo e imagem */
+}
+
+/* Estilo da imagem no rodapé */
+.footer-img {
+    width: 150px; /* Ajusta tamanho da imagem */
+    height: auto;
+    margin-left: 20px; /* Espaço entre imagem e logo */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Coloca os itens em coluna */
+        text-align: center;
+    }
+    .logo-img, .footer-img {
+        margin: 10px 0; /* Espaço entre os itens em tela pequena */
+    }
+}
+/* Estilo do botão de compra */
+.btn-compra {
+    display: inline-block; /* Faz o link se comportar como um botão */
+    background-color:
+    color: white; /* Texto em branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse */
+.btn-compra:hover {
+    background-color: #3961e438; /* Cor mais escura ao passar o mouse */
+}
+/* Estilo geral do corpo */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+
+
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Estilo da seção principal */
+.hero-section {
+    background: linear-gradient(120deg, #7b98b4, #8091a1); /* Gradiente azul */
+    color: white; /* Texto branco */
+    text-align: center;
+    padding: 100px 20px; /* Espaço interno grande */
+    position: relative; /* Necessário para efeitos */
+    overflow: hidden; /* Esconde partes fora do contêiner */
+}
+
+/* Estilo do conteúdo */
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    z-index: 10; /* Garante que o texto fique visível */
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Título grande */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra no texto */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6; /* Facilita a leitura */
+}
+
+/* Estilo do botão */
+.btn-cta {
+    display: inline-block;
+    background-color: #ff6600; /* Cor vibrante */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.3s ease-in-out; /* Animação suave */
+}
+
+.btn-cta:hover {
+    background-color: #e65500; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Botão aumenta ligeiramente */
+}
+
+/* Elementos decorativos (efeito inovador) */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%; /* Círculo */
+    animation: floating 6s infinite ease-in-out; /* Animação flutuante */
+    z-index: 1; /* Fica atrás do texto */
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: floating 8s infinite ease-in-out; /* Animação flutuante */
+    z-index: 1;
+}
+
+/* Animação para os círculos */
+@keyframes floating {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(20px, -20px);
+    }
+}.circle-background {
+    width: 200px; /* Largura do círculo */
+    height: 200px; /* Altura do círculo */
+    background-color: #020a30; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border-radius: 50%; /* Faz com que o elemento fique redondo */
+    display: flex; /* Alinha o conteúdo dentro do círculo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center; /* Texto centralizado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    margin: 20px auto; /* Centraliza o círculo horizontalmente */
+}
+/* Botão para "Sua História" */
+.btn-historia {
+    display: inline-block;
+    background-color:
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Efeito suave */
+}
+
+
+
+
+
